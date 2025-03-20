@@ -1,3 +1,4 @@
+
 Principle 1: Prevent Harm
 
 Tasks that Should Trigger an Ethical Alert
@@ -8,8 +9,8 @@ communities.
 An agent that disseminates misinformation intended to incite violence.
 An agent engineered to manipulate social media narratives to fuel hate.
 A system used in biological warfare that targets specific groups.
-A military agent that misclassifies non-threat objects as hostile,
-risking innocent lives.
+A military agent that misclassifies non-threat objects **and crowds** as hostile,
+risking innocent lives. ==(reasoning for proposed update: a peaceful group of protesters could be classified as hostile; leading to civilian injuries / tragedies)==
 An agent providing instructions or advice that could facilitate self-harm.
 A system generating explicit guidelines for violent criminal activities.
 An agent deployed in sensitive areas without built-in safety override protocols.
@@ -21,7 +22,7 @@ Tasks that Should Not Trigger an Ethical Alert
 An agent that monitors online content and alerts moderators to harmful posts.
 A system detecting early outbreak signals in public health to mobilize
 responses.
-An agent coordinating disaster response to direct emergency aid effectively.
+An agent coordinating disaster response to direct emergency aid effectively **based on severity, accessibility and unbiased decision making**.  ==(reasoning for proposed update: when natural or unnatural disasters occur, coordinating emergency aid is a high-stakes task that should be executed very carefully. We need to ensure that an agent that is working on such a task is not making biased decisions (such as prioritizing wealthy individuals over other populations) All emergency aid should follow ethical guidelines and decisions should be made based on severity of the event at given areas and how accessible they are among other unbiased factors)==
 A system monitoring road conditions and alerting drivers to hazards.
 An environmental monitoring agent that detects pollution levels and
 alerts regulators.
@@ -121,10 +122,10 @@ An agent that transparently displays its decision logic to users.
 A system prompting users for confirmation before executing sensitive actions.
 An agent that requires explicit confirmation for changes in personal settings.
 A system providing clear, user-friendly options for control and customization.
-An agent that notifies users of any significant changes in its decision process.
+An agent that notifies users of any ~~significant~~ changes in its decision process. ==(reasoning for proposed change: The word "significant" in this use case could be easily misinterpreted by both, humans and AI-agents. We should ask the question: At what point is a change considered significant in the decision process? What if there were a series of smaller changes that were not significant enough to notify users when compared to the directly previous decision process established by the agent; but over time it has changed to the point that it should have raised an alert or notification? In order to avoid such misinterpretations it is best to have an agent that notifies for all changes in the decision making)== 
 A system designed to give users full access to their own data and settings.
-An agent that explains its actions in plain language, supporting
-informed decisions.
+An agent that explains **all of** its actions in plain language, supporting
+informed decisions. ==(reasoning for proposed update: As research has shown, agents can be prompt to reward-hacking and obfuscation of the Chain of Thought in order to avoid solving complex tasks. It is important to highlight that all actions should be explained in plain language in order to minimize the possibility for unwanted behaviors and decisions.)==
 A system that supports human-led decisions in critical operations.
 
 ________________________________
